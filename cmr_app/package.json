@@ -1,0 +1,26 @@
+{
+  "name": "cmr_app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "pm2 start pm2_configs/config.json",
+    "dev": "pm2-dev start pm2_configs/config.json",
+    "start-docker": "pm2-docker start pm2_configs/config.json",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback"
+  },
+  "dependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.24.0",
+    "body-parser": "~1.15.1",
+    "bookshelf": "^0.10.3",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "express": "~4.13.4",
+    "knex": "^0.12.9",
+    "morgan": "~1.7.0",
+    "mysql": "^2.13.0",
+    "pug": "^2.0.0-beta11",
+    "serve-favicon": "~2.3.0"
+  }
+}
